@@ -3,15 +3,12 @@ package homeWork8;
 public class Train implements Comparable<Train>{
 
 
-<<<<<<< HEAD
 	private String number;
-=======
-	private float number;
->>>>>>> tiger
 	private String type;
 	private String start;
 	private Int dest;
 	private double price;
+	private float test;
 	//branchtest
 	
 	public Train(){}
