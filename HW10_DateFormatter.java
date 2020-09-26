@@ -10,6 +10,7 @@ public class HW10_DateFormatter {
 
 	public static void main(String[] args) throws ParseException {
 		//使用者輸入日期(年月日) ex. 20110131
+		int gitVer = 1;
 		Scanner sc = new Scanner(System.in);
 		String regex = "^\\d{8}$";
 		DateFormat df = new SimpleDateFormat("yyyyMMdd"); //把數字都轉成合法日期格式
