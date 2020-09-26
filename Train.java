@@ -3,7 +3,7 @@ package homeWork8;
 public class Train implements Comparable<Train>{
 
 
-	private int number;
+	private float number;
 	private String type;
 	private String start;
 	private Int dest;
