@@ -6,8 +6,9 @@ public class Train implements Comparable<Train>{
 	private int number;
 	private String type;
 	private String start;
-	private String dest;
+	private Int dest;
 	private double price;
+	//branchtest
 	
 	public Train(){}
 	
