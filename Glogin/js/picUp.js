@@ -35,11 +35,7 @@
                         }
                     }
                 }
-                e.target.value = ''
-                /*
-                解決input type=file 同一個檔案二次上傳無效的問題!
-                使用input[type=file]的檔案上傳功能，是通過onchange事件觸發js程式碼, 如果兩次檔案是重複的，所以這個時候onchange事件是沒有觸發到的。解決方法 :  把input的value設定為空
-                */
+
             });
 
 
