@@ -1,0 +1,320 @@
+        * {
+            /*以下三行清除瀏覽器預設排版*/
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', 微軟正黑體, sans-serif;
+        }
+        body {
+            /*網站底色-米白色*/
+            background-color: rgba(252, 244, 217, 0.7);
+        }
+        /* 以下是奶爸 */
+        .myNav {
+            /*奶爸底色-藍灰色*/
+            background-color: #A8DADC !important;
+            height: 80px;
+            width: 100%;
+            /*奶爸立體陰影*/
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            /*配合RWD避免跑版*/
+            padding: 0px;
+            /*避免些微空隙*/
+            top: -1px;
+        }
+        /* logo圖 */
+        .myNav .mylogo {
+            /* logo不要太靠邊 */
+            margin-left: 50px;
+            /*logo size*/
+            width: 100px;
+            height: 80px;
+        }
+        .myNav .mylogoWord {
+            /*logoWord size*/
+            width: 200px;
+            height: 80px;
+        }
+        /* 奶爸下拉選單 */
+        .myUndeLine {
+            /* 選單間距 */
+            margin-right: 5px;
+        }
+        .myUndeLine li {
+            width: 150px;
+            /* 隱藏選項 */
+            height: 60px;
+            /* 測試用 */
+            /* height: 300px; */
+            overflow: hidden;
+            /* 靠底比較美觀 */
+            margin-top: 20px;
+            /* 連結文字置中 */
+            text-align: center;
+        }
+        .myUndeLine li:hover {
+            /* 顯示選項 */
+            height: auto;
+            color: #457b9d !important;
+        }
+        /* 調整第一個的選單長度 */
+        .myUndeLine li .myFirst {
+            margin-bottom: 4px;
+        }
+        /*下拉選單*/
+        .morelink {
+            /* 選單上下間距 */
+            padding-bottom: 15px;
+            display: block;
+            background-color: #A8DADC !important;
+        }
+
+        /* 奶爸超連結文字 */
+        .myNavDiv li a {
+            /*文字顏色-銀白色，陰影底色-深藍色*/
+            color: #F1FAEE !important;
+            text-shadow: 1px 1px 3px #457b9d;
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        .myNavDiv li a:hover {
+            /*文字顏色-深藍色，陰影底色-淺藍色*/
+            color: #457b9d !important;
+            text-shadow: 1px 1px 1px #A8DADC;
+        }
+        /*改英文*/
+        .myUndeLine a:hover .ch-word {
+            display: none;
+            /* left: -999em; */
+        }
+        .en-word {
+            display: none;
+        }
+        .myUndeLine a:hover .en-word {
+            display: block;
+        }
+        /* 以上是奶爸所有的下拉選單 */
+
+        /*登入按鈕*/
+        .collapse .myBtn {
+            /*移除所有預設*/
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+            -moz-appearance: none;
+            /* FireFox */
+            appearance: none;
+            /*以上移除所有button預設*/
+
+            color: #fff;
+            background-color: #FAA307;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            /*大小位置*/
+            width: 100px;
+            padding: 2px;
+            margin: 10px 50px 0px 10px;
+            /*鼠標*/
+            cursor: pointer;
+            /*圓角*/
+            border-radius: 7px;
+
+            /*延遲動畫*/
+            transition-duration: 0.2s;
+            overflow: hidden;
+        }
+        .collapse .myBtn:hover {
+            color: #FF7260 !important;
+            background-color: #fff;
+            text-shadow: 1px 1px 2px #fff;
+            box-shadow: 0px 2px 5px #97B1BF;
+        }
+        .myBtn:active, .myBtn:focus {
+            color: #fff !important;
+            background-color: #FF7260;
+        }
+        /* 以上是登入按鈕 */
+
+        /*客服聊天室按鈕*/
+        .qaicon {
+            position: fixed;
+            bottom: 20px;
+            margin: auto;
+            right: 10px;
+            z-index: 9;
+        }
+        .qaicon img {
+            width: 80px;
+            height: 80px;
+        }
+        /*以上客服聊天室按鈕*/
+
+        /*以下是追蹤body設定*/
+        .container {
+            position: relative;
+            top: 20px;
+            margin: 60px auto;
+            width: 95%;
+        }
+        .myH1 {
+            color: #FF7A5A;
+            font-weight: 900;
+            margin: 40px auto;
+        }
+        .myFavorites {
+            color: rgba(80, 80, 80, 0.7);
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .myFavorites:hover {
+            color: #FFF;
+            background-color: rgba(255, 114, 95, 0.5);
+            border: 1px solid rgba(255, 114, 95, 0.2) !important;
+        }
+        .myFavorites:focus {
+            color: #FFF;
+            /*暫時先用背景顏色代替，想要改成出現愛心*/
+            background-color: #FF7260;
+        }
+
+        /*以下是追蹤小卡*/
+        .card-deck {
+            margin: 20px auto;
+        }
+        .card {
+            border: 1px solid rgba(252, 244, 217, 0.7);
+        }
+        /*卡片大小*/
+        .card img {
+            margin-top: 10px;
+            height: 280px;
+            border-radius: 5px;
+        }
+        h5 {
+            font-weight: 700;
+        }
+        .card-link {
+            float: right;
+        }
+        .cutePage {
+            height: 120px;
+            text-align: center;
+        }
+        .page {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 10px;
+        }
+        /*以上為body設定*/
+
+        /*以下設定footer*/
+        .main-footer {
+            background-color: #264653;
+            color: #fff;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        .myFooterContainer ul {
+            list-style-type: none;
+            margin: 5px auto;
+            padding: 0px;
+            text-align: center;
+        }
+        .myFooterContainer ul li {
+            margin-top: 20px;
+        }
+        .myFooterLink {
+            text-decoration: none;
+            color: #fff;
+        }
+        .myFooterLink:hover {
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+        }
+        /*版權字*/
+        .copyright {
+            color: #000;
+            margin: 10px 0px 0px 0px;
+        }
+        /*電腦螢幕動畫*/
+        @media (min-width: 992px) {
+            /* 下拉選單大螢幕高度 */
+            .myUndeLine {
+                height: 80px;
+                border-bottom: 5px solid #A8DADC;
+            }
+            .myUndeLine:hover {
+                border-bottom: 5px solid #457b9d;
+            }
+        }
+        /* 平板、手機等中螢幕 */
+        @media (max-width: 991px) {
+            /*手機不放logo*/
+            .myNav .mylogo {
+                display: none;
+            }
+            /*漢堡下拉*/
+            .myNavDiv {
+                background-color: rgba(168, 218, 220, 0.5);
+                text-align: center;
+            }
+            /* 漢堡下拉後的選單框框 */
+            .myUndeLine li {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .myUndeLine li:hover {
+                margin: 0 auto;
+                border: 1px solid rgba(69, 123, 157, 0.7);
+            }
+            /*下拉選單*/
+            .morelink {
+                /* 選單上下間距 */
+                padding-bottom: 5px;
+                display: block;
+                background-color: transparent !important;
+            }
+            .myUndeLine li a:hover {
+                background-color: rgba(168, 218, 220, 0.6) !important;
+            }
+            /*登入按鈕*/
+            .collapse .myBtn {
+                margin: 15px auto;
+            }
+            .collapsing .myBtn {
+                margin: 15px auto;
+                overflow: hidden;
+
+                color: #fff;
+                background-color: #FAA307;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                /*大小位置*/
+                width: 100px;
+                padding: 2px;
+                /*圓角*/
+                border-radius: 7px;
+                /*移除所有預設*/
+                border: none;
+                outline: none;
+            }
+            /*以上登入按鈕*/
+            .container {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            /*卡片photo長度縮減*/
+            .card img {
+                height: 180px;
+            }
+
+        }
+        /*手機RWD*/
+        @media (max-width: 767.98px) {}

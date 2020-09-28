@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 瀏覽器版本相容性 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Petfect Match</title>
+    <!-- 匯入外部CSS -->
+    <link rel="stylesheet" type="text/css" href="SF.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- AOS設定 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 以下為首頁navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light myNav">
+        <div class="container-fluid">
+            <!-- logo (click to home page)-->
+            <a class="navbar-brand" href="#" style="padding-top: 0px;padding-bottom: 0px"><img class="mylogo" src="logo_v2.jpg"><img class="mylogoWord" src="logoWord.jpg"></a>
+            <!-- logo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 15px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="myNavDiv collapse navbar-collapse" id="navbarText">
+                <!-- 超連結連到各服務搜尋頁面 -->
+                <ul class="navbar-nav ml-auto">
+                    <div class="myUndeLine">
+                        <li class="nav-item">
+                            <a class="nav-link accordion myFirst" href="#"><span class="ch-word">寵物服務</span><span class="en-word">Services</span></a>
+                            <a class="nav-link morelink" href="#">托養</a>
+                            <a class="nav-link morelink" href="#">美容</a>
+                            <a class="nav-link morelink" href="#">領養</a>
+                        </li>
+                    </div>
+                    <div class="myUndeLine">
+                        <li class="nav-item">
+                            <a class="nav-link accordion myFirst" href="#"><span class="ch-word">寵友互動</span><span class="en-word">Interaction</span></a>
+                            <a class="nav-link morelink" href="#">討論區</a>
+                            <a class="nav-link morelink" href="#">揪團</a>
+                        </li>
+                    </div>
+                    <div class="myUndeLine">
+                        <li class="nav-item">
+                            <a class="nav-link accordion" href="#"><span class="ch-word">美容業者專區</span><span class="en-word">Salon store</span></a>
+                        </li>
+                    </div>
+                </ul>
+                <!-- 以上超連結連到各服務搜尋頁面 -->
+                <!-- 登入按鈕 -->
+                <input type="button" class="myBtn" value="sign in"></input>
+                <!-- 以上登入btn -->
+            </div>
+        </div>
+    </nav>
+    <!-- 首頁navigation bar end-->
+    <!-- 內文body -->
+    <div class="container">
+        <div class="row">
+            <h1 class="main-title myH1">追蹤/收藏清單</h1>
+            <div class="section-line"></div>
+        </div>
+        <ul class="nav nav-tabs" style="border-bottom: 1px solid #FF725F">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" href="#">最愛的保姆</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link myFavorites" href="#">最愛的保姆</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link myFavorites" href="#">最愛的美容店</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link myFavorites" href="#">想領養的寵物</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link myFavorites" href="#">喜歡的貼文</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+        </ul>
+        <div class="row card-deck">
+            <div class="col-12 col-md-3 card"><img src="salonCat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">董淑蕙</h5>
+                    <p class="card-text"><small class="text-muted">中壢Ajax</small><a href="#" class="card-link">Card link</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 card"><img src="enjoyCat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">潘麗珍</h5>
+                    <p class="card-text"><small class="text-muted">中壢jQuery</small><a href="#" class="card-link">Card link</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 card"><img src="blackDog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">吳永志</h5>
+                    <p class="card-text"><small class="text-muted">中壢204</small><a href="#" class="card-link">Card link</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 card"><img src="superDog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mrs dodo</h5>
+                    <p class="card-text"><small class="text-muted">中壢Tibame</small><a href="#" class="card-link">Card link</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="cutePage">
+            <a href="#"><img src="025-bull terrier.png" class="page" alt="..."></a>
+            <a href="#"><img src="026-turkish pointer.png" class="page" alt="..."></a>
+            <a href="#"><img src="028-bichon frise.png" class="page" alt="..."></a>
+        </div>
+    </div>
+    <!-- 內文end -->
+    <!-- 客服小按鈕 -->
+    <div class="qaicon">
+        <a href="#"><img src="unicorn.svg" /></a>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid main-footer text-center">
+        <div class="row myFooterContainer">
+            <div class="col-12 col-sm">
+                <ul>About us
+                    <li><a href="#" class="myFooterLink">服務條款</a></li>
+                    <li><a href="#" class="myFooterLink">隱私權政策</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm">
+                <ul>FAQ
+                    <li><a href="#" class="myFooterLink">常見問題</a></li>
+                    <li><a href="#" class="myFooterLink">意見回饋</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm">
+                <ul>Contact us
+                    <li><a href="#" class="myFooterLink">發送電子郵件</a></li>
+                    <li><a href="#" class="myFooterLink">追蹤我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; copyright by <i>NiHaiZaiMa</i>
+            <p>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
