@@ -1,0 +1,10 @@
+
+
+
+後面五個 MVC war 檔，為關聯Table練習，(將來)將用來與『Hibernate』及『Spring』作比較
+===================================================================================
+IBM_emp_0401MVC_Associations.war
+IBM_emp_0402MVC_Associations2.war
+IBM_emp_0403MVC_Associations3.war
+IBM_emp_0403MVC_Associations3_CompositeQuery.war
+IBM_emp_0403MVC_Associations3_CompositeQuery2.war
