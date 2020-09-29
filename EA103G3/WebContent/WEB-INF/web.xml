@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EA103G3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/G3DB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+<!-- 註冊Servlet -->
+  <servlet>
+    <servlet-name>Test_DataSource</servlet-name>
+    <servlet-class>Test_DataSource</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test_DataSource</servlet-name>
+    <url-pattern>/Test_DataSource</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+    <servlet-name>SitLicServlet</servlet-name>
+    <servlet-class>com.sitLic.controller.SitLicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SitLicServlet</servlet-name>
+    <url-pattern>/front-end/sitLic/sitLic.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>ShowImg</servlet-name>
+  	<servlet-class>com.sitLic.controller.ShowImg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowImg</servlet-name>
+  	<url-pattern>/ShowImg</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

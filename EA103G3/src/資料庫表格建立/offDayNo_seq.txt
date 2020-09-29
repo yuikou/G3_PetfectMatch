@@ -1,0 +1,18 @@
+CREATE SEQUENCE offDayNo_seq
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 999
+NOCYCLE
+NOCACHE;
+
+● 查詢目前表格中有使用中sequence
+ SELECT * FROM USER_SEQUENCES;
+
+● 刪除sequence:
+ DROP SEQUENCE offDayNo_seq;
+ 
+● 取用一組新的值:
+ SELECT offDayNo_seq.NEXTVAL FROM DUAL;
+
+● 得知目前使用到幾號 :
+ SELECT offDayNo_seq.CURRVAL FROM DUAL;
