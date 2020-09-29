@@ -1,0 +1,175 @@
+/* ---addNewSitLic--- */
+.hideDiv {
+  display: none !important;
+}
+.myLabel {
+  vertical-align: center;
+}
+.preview {
+  height: 100%;
+  width: 100%;
+}
+.preview::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.info {
+  margin: 5px 0 0 15px;
+}
+.errorList {
+  margin: 60px;
+  display: block;
+  position: relative;
+  top: 70px;
+  left: 50px;
+  z-index: 10;
+}
+/* ------forTest------ */
+.test {
+  margin: 60px;
+  display: block;
+  position: relative;
+  top: 70px;
+  left: 100px;
+  z-index: 10;
+  text-align: center;
+}
+.test a {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.test a:hover {
+	color: #FF7260;
+}
+/* ------------------ */
+
+/* ------ALL USE----- */
+.backFromDB {
+  margin: 10px auto;
+  padding-top: 1px;
+  margin-bottom: 50px;
+}
+.licTable {
+  margin-top: 50px;
+  background-color: transparent;
+  min-width: 100%;
+}
+
+.licTable th {
+  	padding: 10px;
+  	font-size:24px;
+  	min-width: 180px;
+  	background-color: rgba(250, 163, 7, 0.5);
+}
+.vrfTable th {
+	background-color: rgba(168, 218, 220, 0.7)
+}
+.licTable tr,
+th,
+td {
+  text-align: center;
+  margin: auto 0;
+}
+.licTable td {
+  border-bottom: 1px solid rgba(80, 80, 80, 0.1);
+  vertical-align: middle !important;
+}
+.licTable tr:hover {
+  	background-color: rgba(250, 163, 7, 0.1) !important;
+}
+.vrfTable tr:hover {
+	background-color: rgba(168, 218, 220, 0.1) !important;
+}
+.myLicPic {
+  width: 480px;
+  max-height: 200px;
+}
+.licPicImg {
+  width: 100%;
+  padding: 10px;
+}
+/* ------------------ */
+
+/* -listOneSitAllLic- */
+.warrning {
+  font-coloy: red;
+}
+
+.updBtn, .vrfBtn {
+  width: 60px;
+  height: 30px;
+  margin:10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+.updBtn:hover {
+	background-color: #FAA307;
+}
+.vrfBtn:hover {
+	background-color: rgba(69, 123, 157, 0.7);
+}
+
+
+/* 網路參考 */
+@media (max-width: 767.98px) {
+	.rwd-table {
+	　overflow: hidden;
+	}
+	
+	.rwd-table tr:nth-of-type(2n){
+	　background: #eee;
+	}
+	.rwd-table th,
+	.rwd-table td {
+	　margin: 0.5em 1em;
+	}
+	.rwd-table {
+	　min-width: 100%;
+	}
+	
+	.rwd-table th {
+	　display: none;
+	}
+	
+	.rwd-table td {
+	　display: block;
+	}
+	
+	.rwd-table td:before {
+	　content: attr(data-th) " : ";
+	　font-weight: bold;
+	　width: 6.5em;
+	　display: inline-block;
+	}
+	
+	.rwd-table th, .rwd-table td {
+	　text-align: left;
+	}
+	
+	.rwd-table th, .rwd-table td:before {
+	　color: #D20B2A;
+	　font-weight: bold;
+	}
+}
+@media (min-width: 480px) {
+	.rwd-table td:before {
+	　display: none;
+	}
+	.rwd-table th, .rwd-table td {
+	　display: table-cell;
+	　padding: 0.25em 0.5em;
+	}
+	.rwd-table th:first-child,
+	.rwd-table td:first-child {
+	　padding-left: 0;
+	}
+	.rwd-table th:last-child,
+	.rwd-table td:last-child {
+	　padding-right: 0;
+	}
+	.rwd-table th,
+	.rwd-table td {
+	　padding: 1em !important;
+	}
